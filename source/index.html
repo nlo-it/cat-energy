@@ -8,7 +8,7 @@
 
     <header class="page-header">
       <a href="#" class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="width: 33.32px" height="37.61px" alt="Магазин функционального питания Cat Energy">
+        <img src="img/logo-mobile.svg" width="33.32" height="37.61" alt="Магазин функционального питания Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -38,6 +38,126 @@
         </div>
       </nav>
     </header>
+
+    <main>
+      <section class="food-systems">
+        <div class="food-systems__wrapper">
+          <h2 class="visually-hidden">Выбор системы питания</h2>
+          <ul class="food-systems__list">
+            <li class="food-systems__item food-systems__item--weight-loss">
+              <h3 class="food-systems__title">Похудение</h3>
+              <p class="food-systems__text">
+                Ваш кот весит больше собаки и <br>почти утратил способность лазить <br>по деревьям? Пора на диету! Cat <br>Energy Slim поможет вашему <br>питомцу сбросить лишний вес.
+              </p>
+              <a class="food-systems__button" href="#">
+                каталог slim
+                <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                  <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+                </svg>
+              </a>
+            </li>
+            <li class="food-systems__item food-systems__item--weight-gain">
+              <h3 class="food-systems__title">Набор массы</h3>
+              <p class="food-systems__text">
+                Заработать авторитет среди <br>дворовых котов и даже собак? <br>Серия Cat Energy Pro поможет <br>вашему коту нарастить <br>необходимые мышцы!
+              </p>
+              <a class="food-systems__button" href="#">
+                каталог pro
+                <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                  <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Как это работает</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <img class="advantages__icon advantages__icon--useful" src="img/advantages__icon--useful.svg" width="60" height="60" alt="Лист растения на зелёном фоне">
+              <p class="advantages__text advantages__text--useful">
+                Функциональное питание <br>
+                содержит только полезные <br>
+                питательные вещества.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__icon advantages__icon--soluble" src="img/advantages__icon--soluble.svg" width="60" height="60" alt="Символ растворимости в воде на зелёном фоне">
+              <p class="advantages__text advantages__text--soluble">
+                Выпускается в виде порошка, <br>
+                который нужно лишь залить <br>
+                кипятком и готово.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__icon advantages__icon--eating" src="img/advantages__icon--eating.svg" width="60" height="60" alt="Иконка вилки и ножа на зелёном фоне">
+              <p class="advantages__text advantages__text--eating">
+                Замените один-два приема <br>
+                обычной еды на наше <br>
+                функциональное питание.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__icon advantages__icon--fast-result" src="img/advantages__icon--fast-result.svg" width="60" height="60" alt="Символический будильник на зелёном фоне">
+              <p class="advantages__text advantages__text--fast-result">
+                Уже через месяц <br>
+                наслаждайтесь изменениями <br>
+                к лучшему вашего питомца!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="live-example">
+        <div class="live-example__wrapper">
+          <header class="live-example__header">
+            <h2 class="live-example__title">Живой пример</h2>
+          </header>
+          <div class="live-example__description">
+            <p class="live-example__text">
+              Борис сбросил 5 кг за 2 месяца, просто <br>
+              заменив свой обычный корм на Cat Energy <br>
+              Slim. Отличный результат без изнуряющих <br>
+              тренировок! При этом он не менял своих <br>
+              привычек и по-прежнему спит по 16 часов <br>
+              в день.
+            </p>
+            <dl class="live-example__list">
+              <div class="live-example__item">
+                <dt class="live-example__value-result live-example__value-result--by-weight">5 кг</dt>
+                <dd class="live-example__value">снижение веса</dd>
+              </div>
+              <div class="live-example__item">
+                <dt class="live-example__value-result live-example__value-result--by-time">60 дней</dt>
+                <dd class="live-example__value">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="live-example__food-costs">
+              <span class="live-example__food-costs--value">Затраты на питание:</span>
+              <span class="live-example__food-costs--value-result">15 000 руб.</span>
+            </p>
+          </div>
+          <div class="live-example__slider slider">
+            <div class="live-example__slides"></div>
+            <div class="live-example__slides-toggle">
+              Было
+              <input class="slider__mobile-field" type="radio" name="mobile-field" id="mobile-field" checked>
+              <label class="slider__mobile-label" for="mobile-field"></label>
+              <input class="slider__mobile-field" type="radio" name="mobile-field" id="mobile-field">
+              <label class="slider__mobile-label" for="mobile-field"></label>
+              Стало
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
   </body>
 </html>

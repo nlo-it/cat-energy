@@ -20,7 +20,7 @@
         </button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
-            <li class="navigation__item navigation__item--current">
+            <li class="navigation__item">
               <a href="#">
                 Главная
               </a>
@@ -30,7 +30,7 @@
                 Каталог продукции
               </a>
             </li>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--current">
               <a href="#">
                 Подбор программы
               </a>
@@ -43,185 +43,136 @@
     <main class="page-main">
 
       <h1 class="visually-hidden">
-        Магазин функционального питания для кошек Cat Energy
+        Выбор программы для вашего кота
       </h1>
 
-      <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">
-            Функциональное <br>
-            питание для котов
+      <section class="program-selection">
+        <div class="program-selection__wrapper">
+          <h2 class="program-selection__title">
+            Подбор программы
           </h2>
-          <p class="promo__text">
-            Занялся собой? Займись котом!
+          <p class="program-selection__text">
+            Заполните анкету, и мы подберём <br>
+            программу для вашего кота
           </p>
-          <a class="promo__button button" href="#">
-            Подобрать программу
-          </a>
-          <img class="promo__img" src="img/sports-nutrition-mini.png" width="280" height="270" alt="Спортивное питание Cat Energy - со вкусом курицы">
+          <form class="program-selection__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="program-selection__cat-data cat-data">
+              <legend class="visually-hidden">Входные данные по вашему коту</legend>
+              <ul class="cat-data__list">
+                <li class="cat-data__item">
+                  <p class="cat-data__field field">
+                    <label class="field__label" for="cat-data__name">Имя:*</label>
+                    <input class="field__input" type="text" name="cat-data__name" id="cat-data__name" placeholder="Барсик" required>
+                  </p>
+                </li>
+                <li class="cat-data__item">
+                  <p class="cat-data__field field">
+                    <label class="field__label" for="cat-data__weight">Вес (кг):*</label>
+                    <input class="field__input" type="number" name="cat-data__weight" id="cat-data__weight" placeholder="7" required>
+                  </p>
+                </li>
+                <li class="cat-data__item">
+                  <p class="cat-data__field field">
+                    <label class="field__label" for="cat-data__age">Возраст (лет):</label>
+                    <input class="field__input" type="number" name="cat-data__age" id="cat-data__age" placeholder="7">
+                  </p>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="program-selection__your-goal your-goal">
+              <legend class="visually-hidden">Ваша цель</legend>
+              <ul class="your-goal__list">
+                <li class="your-goal__item">
+                  <p class="your-goal__field field">
+                    <input class="visually-hidden field__input" type="radio" name="your-goal-field" id="your-goal__weight-loss" checked>
+                    <label class="field__label" for="your-goal__weight-loss">Похудение</label>
+                  </p>
+                </li>
+                <li class="your-goal__item">
+                  <p class="your-goal__field field">
+                    <input class="visually-hidden field__input" type="radio" name="your-goal-field" id="your-goal__weight-gain">
+                    <label class="field__label" for="your-goal__weight-gain">Набор массы</label>
+                  </p>
+                </li>
+                <li class="your-goal__item">
+                  <p class="your-goal__field field">
+                    <input class="visually-hidden field__input" type="radio" name="your-goal-field" id="your-goal__dont-know">
+                    <label class="field__label" for="your-goal__dont-know">Не знаю (нужен ваш совет)</label>
+                  </p>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="program-selection__contacts-user contacts-user">
+              <legend class="contacts-user__title">
+                Контактные данные <br>
+                (владельца кота)
+              </legend>
+              <ul class="contacts-user__list">
+                <li class="contacts-user__item">
+                  <p class="contacts-user__field field">
+                    <label class="field__label field__label--mail" for="mail-input">E-mail:*</label>
+                    <input class="field__input" type="email" name="mail-input" id="mail-input" placeholder="kuklachev@gmail.com" required>
+                  </p>
+                </li>
+                <li class="contacts-user__item">
+                  <p class="contacts-user__field field">
+                    <label class="field__label field__label--phone" for="phone-input">Телефон:*</label>
+                    <input class="field__input" type="tel" pattern="[0-9]{1}-([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone-input" id="phone-input" placeholder="8 (960) 900-60-90" required>
+                  </p>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="program-selection__comment comment">
+              <legend class="comment__title">
+                <label class="comment__label" for="comment-area">
+                  Комментарий
+                </label>
+              </legend>
+              <textarea class="comment__area" name="comment-area" id="comment-area" rows="5" placeholder="Расскажите обо всех повадках кота" required></textarea>
+            </fieldset>
+            <fieldset class="program-selection__additionally additionally">
+              <legend class="additionally__title">
+                Дополнительно
+              </legend>
+              <ul class="additionally__list">
+                <li class="additionally__item additionally__item--first">
+                  <p class="additionally__field field">
+                    <input class="visually-hidden field__input field__input--first" type="checkbox" name="additionally-checkbox" id="additionally-checkbox-first" checked>
+                    <label class="field__label field__label--first" for="additionally-checkbox-first">Сахарозаменитель</label>
+                  </p>
+                </li>
+                <li class="additionally__item additionally__item--second">
+                  <p class="additionally__field field">
+                    <input class="visually-hidden field__input field__input--second" type="checkbox" name="additionally-checkbox" id="additionally-checkbox-second">
+                    <label class="field__label field__label--second" for="additionally-checkbox-second">Питьевая вода</label>
+                  </p>
+                </li>
+                <li class="additionally__item additionally__item--third">
+                  <p class="additionally__field field">
+                    <input class="visually-hidden field__input field__input--third" type="checkbox" name="additionally-checkbox" id="additionally-checkbox-third">
+                    <label class="field__label field__label--third" for="additionally-checkbox-third">Молоко</label>
+                  </p>
+                </li>
+                <li class="additionally__item additionally__item--fourth">
+                  <p class="additionally__field field">
+                    <input class="visually-hidden field__input field__input--fourth" type="checkbox" name="additionally-checkbox" id="additionally-checkbox-fourth">
+                    <label class="field__label field__label--fourth" for="additionally-checkbox-fourth">Витамины</label>
+                  </p>
+                </li>
+              </ul>
+              <p class="additionally__line">
+                <button class="additionally__button button" type="submit">
+                  Отправить заявку
+                </button>
+              </p>
+              <p class="additionally__text">
+                * — Обязательные поля
+              </p>
+            </fieldset>
+          </form>
         </div>
       </section>
 
-      <section class="programs">
-        <div class="programs__wrapper">
-          <h2 class="visually-hidden">
-            Выбор системы питания
-          </h2>
-          <ul class="programs__list">
-            <li class="programs__item programs__item--weight-loss">
-              <h3 class="programs__title">
-                Похудение
-              </h3>
-              <p class="programs__text">
-                Ваш кот весит больше собаки и <br>
-                почти утратил способность лазить <br>
-                по деревьям? Пора на диету! Cat <br>
-                Energy Slim поможет вашему <br>
-                питомцу сбросить лишний вес.
-              </p>
-              <a class="programs__button button" href="#">
-                каталог slim
-                <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-                  <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
-                </svg>
-              </a>
-            </li>
-            <li class="programs__item programs__item--weight-gain">
-              <h3 class="programs__title">
-                Набор массы
-              </h3>
-              <p class="programs__text">
-                Заработать авторитет среди <br>
-                дворовых котов и даже собак? <br>
-                Серия Cat Energy Pro поможет <br>
-                вашему коту нарастить <br>
-                необходимые мышцы!
-              </p>
-              <a class="programs__button button" href="#">
-                каталог pro
-                <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-                  <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">
-            Наши преимущества
-          </h2>
-          <p class="advantages__title">
-            Как это работает
-          </p>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--first">
-              <img class="advantages__icon advantages__icon--useful" src="img/advantages__icon--useful.svg" width="60" height="60" alt="Лист растения на зелёном фоне">
-              <p class="advantages__text">
-                Функциональное питание <br>
-                содержит только полезные <br>
-                питательные вещества.
-              </p>
-            </li>
-            <li class="advantages__item advantages__item--second">
-              <img class="advantages__icon advantages__icon--soluble" src="img/advantages__icon--soluble.svg" width="60" height="60" alt="Символ растворимости в воде на зелёном фоне">
-              <p class="advantages__text">
-                Выпускается в виде порошка, <br>
-                который нужно лишь залить <br>
-                кипятком и готово.
-              </p>
-            </li>
-            <li class="advantages__item advantages__item--third">
-              <img class="advantages__icon advantages__icon--eating" src="img/advantages__icon--eating.svg" width="60" height="60" alt="Иконка вилки и ножа на зелёном фоне">
-              <p class="advantages__text">
-                Замените один-два приема <br>
-                обычной еды на наше <br>
-                функциональное питание.
-              </p>
-            </li>
-            <li class="advantages__item advantages__item--fourth">
-              <img class="advantages__icon advantages__icon--fast-result" src="img/advantages__icon--fast-result.svg" width="60" height="60" alt="Символический будильник на зелёном фоне">
-              <p class="advantages__text">
-                Уже через месяц <br>
-                наслаждайтесь изменениями <br>
-                к лучшему вашего питомца!
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="live-example">
-        <div class="live-example__wrapper">
-          <h2 class="visually-hidden">
-            Наглядный пример трансформации
-          </h2>
-          <p class="live-example__title">
-            Живой пример
-          </p>
-          <div class="live-example__description">
-            <p class="live-example__text">
-              Борис сбросил 5 кг за 2 месяца, просто <br>
-              заменив свой обычный корм на Cat Energy <br>
-              Slim. Отличный результат без изнуряющих <br>
-              тренировок! При этом он не менял своих <br>
-              привычек и по-прежнему спит по 16 часов <br>
-              в день.
-            </p>
-            <dl class="live-example__list">
-              <div class="live-example__item">
-                <dt class="live-example__value-result live-example__value-result--by-weight">
-                  5 кг
-                </dt>
-                <dd class="live-example__value">
-                  снижение веса
-                </dd>
-              </div>
-              <div class="live-example__item">
-                <dt class="live-example__value-result live-example__value-result--by-time">
-                  60 дней
-                </dt>
-                <dd class="live-example__value">
-                  затрачено времени
-                </dd>
-              </div>
-            </dl>
-            <p class="live-example__food-costs">
-              <span class="live-example__food-costs--value">
-                Затраты на питание:
-              </span>
-              <span class="live-example__food-costs--value-result">
-                15 000 руб.
-              </span>
-            </p>
-          </div>
-          <div class="live-example__slider slider">
-            <ul class="live-example__list slider__list">
-              <li class="live-example__item slider__item">
-                <img class="slider__slides--fat-cat" src="img/fat-cat-mini.jpg" width="311" height="232" alt="Фото толстого кота, мобильная версия">
-              </li>
-              <li class="live-example__item slider__item">
-                <img class="slider__slides--skinny-cat" src="img/skinny-cat-mini.jpg" width="243" height="232" alt="Фото стройного кота, мобильная версия">
-              </li>
-            </ul>
-            <div class="slider__controls">
-              Было
-              <input class="slider__input slider__input--radio" type="radio" name="radio-toggle" id="first-radio-toggle" checked>
-              <label class="slider__label slider__label--radio" for="first-radio-toggle"></label>
-              <input class="slider__input slider__input--radio" type="radio" name="radio-toggle" id="second-radio-toggle">
-              <label class="slider__label slider__label--radio" for="second-radio-toggle"></label>
-              <input class="slider__input slider__input--range visually-hidden" type="range" name="range-toggle" id="range-toggle">
-              <label class="slider__label slider__label--range" for="range-toggle"></label>
-              <!-- Возможно это место лучше переделать на абзац <p> внутри которого будут кнопки <button> -->
-              Стало
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
       <footer class="page-footer">

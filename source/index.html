@@ -12,37 +12,39 @@
   <body class="page__body">
 
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img src="img/fox-logo.svg" width="34" height="38" alt="Логотип магазина функционального питания Cat Energy - мобильная версия">
-        <img src="img/text-logo.svg" width="101" height="18" alt="Название магазина Cat Energy в графическом виде - мобильная версия">
-        <!-- Скорее всего здесь я сотворил бред и логотип должен быть вставлен одним файлом, а не двумя -->
-      </a>
-      <nav class="page-header__navigation navigation visually-hidden">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
-        </button>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item navigation__item--current">
-              <a href="#">
-                Главная
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="#">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="#">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__image" src="img/fox-logo.svg" width="34" height="38" alt="Логотип магазина функционального питания Cat Energy - мобильная версия">
+          <img class="page-header__image" src="img/text-logo.svg" width="101" height="18" alt="Название магазина Cat Energy в графическом виде - мобильная версия">
+          <!-- Скорее всего здесь я сотворил бред и логотип должен быть вставлен одним файлом, а не двумя -->
+        </a>
+        <nav class="page-header__navigation navigation">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+          <div class="navigation__wrapper">
+            <ul class="navigation__list visually-hidden">
+              <li class="navigation__item navigation__item--current">
+                <a href="#">
+                  Главная
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -53,30 +55,28 @@
 
       <section class="promo">
         <div class="promo__wrapper">
-          <h2 class="promo__title">
-            Функциональное <br>
-            питание для котов
-          </h2>
-          <p class="promo__text">
-            Занялся собой? Займись котом!
-          </p>
-          <a class="promo__button button" href="#">
-            Подобрать программу
-          </a>
-          <img class="promo__img" src="img/sports-nutrition-mini.png" width="280" height="270" alt="Спортивное питание Cat Energy - со вкусом курицы">
+          <div class="promo__container">
+            <h2 class="promo__title clear">
+              Функциональное <br>
+              питание для котов
+            </h2>
+            <p class="promo__text clear">
+              Занялся собой? Займись котом!
+            </p>
+            <a class="promo__button button" href="#">
+              Подобрать программу
+            </a>
+            <img class="promo__image" src="img/sports-nutrition-mini.png" width="280" height="270" alt="Спортивное питание Cat Energy - со вкусом курицы">
+          </div>
         </div>
       </section>
 
       <section class="programs">
         <div class="programs__wrapper">
-          <h2 class="visually-hidden">
-            Выбор системы питания
-          </h2>
+          <h2 class="visually-hidden">Выбор системы питания</h2>
           <ul class="programs__list">
             <li class="programs__item programs__item--weight-loss">
-              <h3 class="programs__title">
-                Похудение
-              </h3>
+              <h3 class="programs__title">Похудение</h3>
               <p class="programs__text">
                 Ваш кот весит больше собаки и <br>
                 почти утратил способность лазить <br>
@@ -93,9 +93,7 @@
               </a>
             </li>
             <li class="programs__item programs__item--weight-gain">
-              <h3 class="programs__title">
-                Набор массы
-              </h3>
+              <h3 class="programs__title">Набор массы</h3>
               <p class="programs__text">
                 Заработать авторитет среди <br>
                 дворовых котов и даже собак? <br>

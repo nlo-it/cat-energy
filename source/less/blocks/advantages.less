@@ -1,0 +1,72 @@
+// .advantages {}
+
+.advantages__wrapper {
+  width: 280px;
+  outline: 1px solid greenyellow;
+  outline-offset: -1px;
+  padding-bottom: 42px;
+  margin: 0 auto;
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 38px;
+}
+
+.advantages__list {
+  font-family: "Arial";
+  line-height: 18px;
+  color: @text-dark-grey;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 80px;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantages__item--pic::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  outline: 1px solid greenyellow;
+  outline-offset: -1px;
+}
+
+.advantages__item--pic--nutrients {
+  height: 60px;
+  background-image: url("../../img/nutrients.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--pic--powder-form {
+  height: 60px;
+  background-image: url("../../img/powder-form.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--pic--instead-food {
+  height: 60px;
+  background-image: url("../../img/instead-food.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--pic--quick-effect {
+  height: 60px;
+  background-image: url("../../img/quick-effect.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

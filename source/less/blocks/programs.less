@@ -1,9 +1,82 @@
 // .programs {}
-// .programs__wrapper {}
-// .programs__list {}
-// .programs__item {}
-// .programs__item--weight-loss {}
-// .programs__item--weight-gain {}
-// .programs__title {}
-// .programs__text {}
-// .programs__button {}
+
+.programs__wrapper {
+  max-width: 280px;
+  height: 550px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.programs__list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.programs__item {
+  background-color: @bcg-programs-light-grey;
+  padding: 30px 0 18px 20px;
+  margin-bottom: 22px;
+}
+
+.programs__item--weight-loss {
+  background: url("../../img/skinny-cat-icon.svg") no-repeat 10% 10%;
+}
+
+.programs__item--weight-gain {
+  background: url("../../img/fat-cat-icon.svg") no-repeat 6% 11%;
+}
+
+.programs__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0 0 29px 71px;
+}
+
+.programs__text {
+  font-family: "Arial";
+  line-height: 18px;
+  color: @text-dark-grey;
+  position: relative;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+}
+
+.programs__text--decoration-line::after {
+  content: "";
+  width: 240px;
+  border-bottom: 1px solid @decor-border-darken-grey;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.programs__button {
+  font-size: 16px;
+  line-height: 16px;
+  color: @black;
+  display: inline-block;
+  position: relative;
+  padding-top: 5px;
+}
+
+.programs__button--arrow::after {
+  content: "";
+  width: 32px;
+  height: 12px;
+  background-image: url("../../img/arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  left: 100px;
+  transform: translateY(-50%);
+}

@@ -4,51 +4,48 @@
   width: 320px;
   min-height: 480px;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 22px;
   outline: 1px solid red;
   outline-offset: -1px;
 }
 
 .promo__container {
   height: 302px;
+  color: @white;
+  text-align: center;
   background-image:
   linear-gradient(to bottom, @bcg-green, @bcg-green),
-  url(../../img/background-promo-mini.jpg);
+  url("../../img/background-promo-mini.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover, contain;
-  color: @white;
-  // box-shadow: inset 0 302px @bcg-promo-green;
 }
 
 .promo__title {
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
-  text-align: center;
   padding-top: 27px;
-  // padding-left: 36px;
   padding-bottom: 25px;
 }
 
 .promo__text {
   text-transform: uppercase;
-  text-align: center;
 }
 
 .promo__button {
+  width: 280px;
+  max-width: 280px;
   height: 40px;
   line-height: 18px;
+  background-color: @bcg-green;
   position: absolute;
   left: 20px;
   bottom: 0;
-  background-color: @bcg-green;
 }
 
 .promo__image {
   position: absolute;
   top: 167px;
   left: 20px;
-  // outline: 1px solid rgb(4, 0, 255);
-  // outline-offset: -1px;
 }

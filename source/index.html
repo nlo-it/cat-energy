@@ -150,11 +150,11 @@
           <h2 class="visually-hidden">
             Наглядный пример трансформации
           </h2>
-          <p class="live-example__title">
+          <p class="live-example__title clear">
             Живой пример
           </p>
           <div class="live-example__description">
-            <p class="live-example__text">
+            <p class="live-example__text clear">
               Борис сбросил 5 кг за 2 месяца, просто <br>
               заменив свой обычный корм на Cat Energy <br>
               Slim. Отличный результат без изнуряющих <br>
@@ -162,52 +162,69 @@
               привычек и по-прежнему спит по 16 часов <br>
               в день.
             </p>
-            <dl class="live-example__list">
-              <div class="live-example__item">
-                <dt class="live-example__value-result live-example__value-result--by-weight">
-                  5 кг
-                </dt>
-                <dd class="live-example__value">
-                  снижение веса
-                </dd>
-              </div>
-              <div class="live-example__item">
+            <!-- <ul class="live-example__list">
+              <li class="live-example__item">
+                <fieldset>
+                  <legend class="live-example__value">снижение веса</legend>
+                  <p class="live-example__value-result live-example__value-result--by-weight clear">5 кг</dt>
+                </fieldset>
+              </li>
+              <li class="live-example__item">
                 <dt class="live-example__value-result live-example__value-result--by-time">
                   60 дней
                 </dt>
                 <dd class="live-example__value">
                   затрачено времени
                 </dd>
+              </li>
+            </ul> -->
+            <dl class="live-example__list clear">
+              <div class="live-example__item">
+                <dt class="live-example__result live-example__result--by-weight">
+                  5 кг
+                </dt>
+                <dd class="live-example__target clear">
+                  снижение веса
+                </dd>
+              </div>
+              <div class="live-example__item">
+                <dt class="live-example__result live-example__result--by-time">
+                  60 дней
+                </dt>
+                <dd class="live-example__target clear">
+                  затрачено времени
+                </dd>
               </div>
             </dl>
-            <p class="live-example__food-costs">
-              <span class="live-example__food-costs--value">
+            <p class="live-example__food-costs clear">
+              <span class="live-example__food-costs-value">
                 Затраты на питание:
               </span>
-              <span class="live-example__food-costs--value-result">
+              <span class="live-example__food-costs-result">
                 15 000 руб.
               </span>
             </p>
           </div>
           <div class="live-example__slider slider">
-            <ul class="live-example__list slider__list">
-              <li class="live-example__item slider__item">
-                <img class="slider__slides--fat-cat" src="img/fat-cat-mini.jpg" width="311" height="232" alt="Фото толстого кота, мобильная версия">
+            <ul class="live-example__slider-list slider__list clear">
+              <li class="live-example__slider-item slider__item">
+                <img class="slider__slides--fat-cat" src="img/fat-cat-mini.png" width="311" height="232" alt="Фото толстого кота, мобильная версия">
               </li>
-              <li class="live-example__item slider__item">
-                <img class="slider__slides--skinny-cat" src="img/skinny-cat-mini.jpg" width="243" height="232" alt="Фото стройного кота, мобильная версия">
+              <li class="live-example__slider-item slider__item visually-hidden">
+                <img class="slider__slides--skinny-cat" src="img/skinny-cat-mini.png" width="243" height="232" alt="Фото стройного кота, мобильная версия">
               </li>
             </ul>
             <div class="slider__controls">
-              Было
-              <input class="slider__input slider__input--radio" type="radio" name="radio-toggle" id="first-radio-toggle" checked>
-              <label class="slider__label slider__label--radio" for="first-radio-toggle"></label>
-              <input class="slider__input slider__input--radio" type="radio" name="radio-toggle" id="second-radio-toggle">
-              <label class="slider__label slider__label--radio" for="second-radio-toggle"></label>
-              <input class="slider__input slider__input--range visually-hidden" type="range" name="range-toggle" id="range-toggle">
-              <label class="slider__label slider__label--range" for="range-toggle"></label>
+              <p class="slider__tumbler clear">
+                <!-- <input class="slider__input slider__input--radio visually-hidden" type="radio" name="radio-toggle" id="first-radio-toggle" checked>
+                <label class="slider__label slider__label--radio" for="first-radio-toggle"></label>
+                <input class="slider__input slider__input--radio visually-hidden" type="radio" name="radio-toggle" id="second-radio-toggle">
+                <label class="slider__label slider__label--radio" for="second-radio-toggle"></label> -->
+                <button class="slider__button clear" type="button"></button>
+              </p>
+              <!-- <input class="slider__input slider__input--range visually-hidden" type="range" name="range-toggle" id="range-toggle">
+              <label class="slider__label slider__label--range" for="range-toggle"></label> -->
               <!-- Возможно это место лучше переделать на абзац <p> внутри которого будут кнопки <button> -->
-              Стало
             </div>
           </div>
         </div>

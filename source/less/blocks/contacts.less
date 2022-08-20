@@ -1,0 +1,57 @@
+// .contacts {}
+
+// .contacts__wrapper {}
+
+.contacts__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @white;
+  padding: 28px 20px 26px 20px;
+  margin-right: 2px;
+}
+
+.contacts__text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.contacts__text--cooperation {
+  width: 140px;
+  height: 58px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @contacts-coop-text-black;
+}
+
+.contacts__text--address {
+  width: 138px;
+  height: 60px;
+  font-family: "Arial";
+  line-height: 20px;
+  color: @text-dark-grey;
+}
+
+.contacts__map {
+  min-width: 320px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contacts__image {
+  width: 320px;
+  height: 362px;
+  object-fit: cover;
+}
+
+.contacts__marker {
+  width: 57px;
+  height: 52px;
+  position: absolute;
+  top: 139px;
+  left: 134px;
+}
+

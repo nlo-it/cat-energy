@@ -17,16 +17,19 @@
 
 .programs__item {
   background-color: @bcg-programs-light-grey;
+  background-repeat: no-repeat;
   padding: 30px 0 18px 20px;
   margin-bottom: 22px;
 }
 
 .programs__item--weight-loss {
-  background: url("../../img/skinny-cat-icon.svg") no-repeat 10% 10%;
+  background-image: url("../../img/skinny-cat-icon.svg");
+  background-position: 10% 10%;
 }
 
 .programs__item--weight-gain {
-  background: url("../../img/fat-cat-icon.svg") no-repeat 6% 11%;
+  background-image: url("../../img/fat-cat-icon.svg");
+  background-position: 6% 11%;
 }
 
 .programs__title {
@@ -65,6 +68,9 @@
   display: inline-block;
   position: relative;
   padding-top: 5px;
+  white-space: pre-wrap;
+  outline: 1px solid rgb(0, 255, 55);
+  outline-offset: -1px;
 }
 
 .programs__button--arrow::after {
@@ -75,8 +81,5 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
-  position: absolute;
-  top: 55%;
-  left: 100px;
-  transform: translateY(-50%);
+  margin: 0 0 2px 15px;
 }

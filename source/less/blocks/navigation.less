@@ -1,34 +1,29 @@
 // .navigation {}
-.navigation__toggle {
-  width: 24px;
-  height: 17.5px;
-  display: inline-block;
-  border: none;
-  border-bottom: 1.5px solid @black;
-  background-color: transparent;
-  position: absolute;
-  bottom: 25px;
-  right: 0;
-  cursor: pointer;
-}
-
-.navigation__toggle::before,
-.navigation__toggle::after {
-  content: "";
+// НАДО ПЕРЕВЕРСТАТЬ КНОПКУ-ГАМБУРГЕР - СДЕЛАТЬ ЕЁ ЧЕРЕЗ ИНПУТ + СВЕРСТАТЬ NAV
+.burger-size-line () {
   width: 24px;
   height: 1.5px;
-  position: absolute;
   background-color: @black;
 }
 
-.navigation__toggle::before {
-  top: 0;
-  left: 0;
-}
-
-.navigation__toggle::after {
-  top: 8px;
-  left: 0;
+.navigation__toggle {
+  .burger-size-line;
+  border: none;
+  position: relative;
+  &::before {
+    content: "";
+    .burger-size-line;
+    position: absolute;
+    top: -8px;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    .burger-size-line;
+    position: absolute;
+    top: 8px;
+    left: 0;
+  }
 }
 
 // .navigation__wrapper {}
